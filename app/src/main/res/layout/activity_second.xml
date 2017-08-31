@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rapio.intent.SecondActivity">
+    <TextView
+        android:id="@+id/tvFG"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:height="70dp"
+        android:width="150dp"
+        android:layout_marginTop="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tvRA"
+        android:layout_alignStart="@+id/tvRA" />
+    <TextView
+        android:id="@+id/tvRA"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:height="70dp"
+        android:width="150dp"
+        android:text=""
+        android:layout_alignBottom="@+id/btnBack"
+        android:layout_alignRight="@+id/btnBack"
+        android:layout_alignEnd="@+id/btnBack"
+        android:layout_marginBottom="72dp" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:onClick="goBackToMain"
+        android:layout_marginBottom="118dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

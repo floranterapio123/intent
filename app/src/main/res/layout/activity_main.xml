@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rapio.intent.MainActivity">
+
+    <EditText
+        android:id="@+id/etQ1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnCompute"
+        android:layout_toEndOf="@+id/btnCompute" />
+    <EditText
+        android:id="@+id/etQ2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etQ1"
+        android:layout_alignLeft="@+id/etQ1"
+        android:layout_alignStart="@+id/etQ1"
+        android:layout_marginTop="34dp" />
+    <EditText
+        android:id="@+id/etSW"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/etQ2"
+        android:layout_alignLeft="@+id/etQ2"
+        android:layout_alignStart="@+id/etQ2" />
+    <EditText
+        android:id="@+id/etLE"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/etSW"
+        android:layout_alignLeft="@+id/etSW"
+        android:layout_alignStart="@+id/etSW" />
+    <EditText
+        android:id="@+id/etME"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/etLE"
+        android:layout_alignLeft="@+id/etLE"
+        android:layout_alignStart="@+id/etLE" />
+
+
+    <TextView
+        android:id="@+id/textQ1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Quiz 1"
+        android:layout_alignBaseline="@+id/etQ1"
+        android:layout_alignBottom="@+id/etQ1"
+        android:layout_toLeftOf="@+id/btnCompute"
+        android:layout_toStartOf="@+id/btnCompute" />
+    <TextView
+        android:id="@+id/textQ2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Quiz 2"
+        android:layout_alignBaseline="@+id/etQ2"
+        android:layout_alignBottom="@+id/etQ2"
+        android:layout_alignLeft="@+id/textQ1"
+        android:layout_alignStart="@+id/textQ1" />
+    <TextView
+        android:id="@+id/textSW"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Seatworks"
+        android:layout_alignBaseline="@+id/etSW"
+        android:layout_alignBottom="@+id/etSW"
+        android:layout_alignLeft="@+id/textQ2"
+        android:layout_alignStart="@+id/textQ2" />
+    <TextView
+        android:id="@+id/textLE"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Lab Exercises"
+        android:layout_alignBaseline="@+id/etLE"
+        android:layout_alignBottom="@+id/etLE"
+        android:layout_alignLeft="@+id/textSW"
+        android:layout_alignStart="@+id/textSW" />
+    <TextView
+        android:id="@+id/textME"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="Major Exam"
+        android:layout_alignBaseline="@+id/etME"
+        android:layout_alignBottom="@+id/etME"
+        android:layout_alignLeft="@+id/textLE"
+        android:layout_alignStart="@+id/textLE" />
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="compute"
+        android:text="Compute"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
